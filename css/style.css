@@ -497,3 +497,142 @@ li {
   display: block;
   margin: 0 auto;
 }
+
+/* Triple camera */
+.triple-camera {
+  padding: 120px 0 850px;
+  background-image: url("../images/triple-camera/triple-camera-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.triple-camera__inner {
+  max-width: 976px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.triple-camera__title {
+  max-width: 750px;
+  width: 100%;
+}
+
+.triple-camera__photo-shot,
+.triple-camera__zoom {
+  position: absolute;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #fff;
+  width: 200px;
+}
+
+.triple-camera__photo-shot {
+  top: 420px;
+  right: 200px;
+}
+
+.triple-camera__zoom {
+  bottom: 105px;
+  left: 230px;
+}
+
+/* Portrait mode */
+.portrait-mode {
+  padding: 120px 0 120px;
+  background-color: #000;
+}
+
+.portrait-mode__inner {
+  max-width: 976px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.portrait-mode__title {
+  background-image: linear-gradient(to right,#fff,#fff);
+}
+
+.portrait-mode__text {
+  margin-bottom: 40px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.portrait-mode__video {
+  border-radius: 20px;
+}
+
+/* Night photography */
+.night-photography {
+  padding: 120px 0 850px;
+  background-image: url("../images/night-photography/night-photography-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.night-photography__inner {
+  max-width: 976px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.night-photography__title {
+  background-image: linear-gradient(to right,#fff,#fff);
+}
+
+/* Selfie camera */
+.selfie-camera {
+  padding: 120px 0 0;
+  background-color: #000;
+}
+
+.selfie-camera__inner {
+  max-width: 976px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.selfie-camera__title {
+  max-width: 620px;
+  width: 100%;
+}
+
+.selfie-camera__text {
+  margin-bottom: 64px;
+}
+
+.selfie-camera__img {
+  max-width: 976px;
+  width: 100%;
+  margin-bottom: 90px;
+}
+
+.selfie-camera__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selfie-camera__item {
+  width: 156px;
+  height: 113px;
+}
+
+.selfie-camera__item-img {
+  width: 47px;
+  height: 47px;
+  margin-bottom: 38px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selfie-camera__item-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #757575;
+  text-align: center;
+}
