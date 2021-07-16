@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -17,7 +21,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   padding: 0;
   margin: 0;
 }
@@ -37,14 +42,30 @@ li {
   padding: 0 20px;
 }
 
+.title {
+  font-size: 37px;
+  font-weight: 400;
+  margin-bottom: 23px;
+  background-image: linear-gradient(to right,red,#3170ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.text {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,.6);
+}
+
 /* Header */
 .header {
-  height: 40px;
   background-color: #212121;
 }
 
 .header__top {
-  height: 100%;
+  height: 40px;
 }
 
 .header__top-inner {
@@ -204,4 +225,275 @@ li {
 .active-link {
   color: #8c8c8c;
   cursor: default;
+}
+
+/* overview */
+.overview {
+  background-image: url("../images/overview/overview-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 300px;
+  padding-bottom: 400px;
+}
+
+.overview__info {
+  max-width: 500px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.overview__info-title {
+  font-size: 54px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.overview__info-subtitle {
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  margin: 50px 0 25px;
+}
+
+.overview__info-text {
+  font-size: 19px;
+  line-height: 28px;
+  color: #757575;
+  display: inline-block;
+}
+
+/* Feature */
+.feature {
+  padding: 40px 0 50px;
+  background-color: #000;
+}
+
+.feature__items {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 930px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.feature__item {
+  width: 216px;
+  height: 179px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 0 7.5px 20px 7.5px;
+}
+
+.feature__item-info {
+  width: 190px;
+  color: #757575;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 15px;
+  line-height: 17px;
+}
+
+/* Banner */
+.banner {
+  height: 320px;
+  background-image: url("../images/banner/banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner__title {
+  color: #fff;
+  text-align: center;
+  max-width: 500px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* Snapdragon */
+
+.snapdragon {
+  padding: 130px 0 500px;
+  background-image: url("../images/snapdragon-banner/snapdragon-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.snapdragon__inner {
+  max-width: 976px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Performance */
+.performance {
+  padding: 120px 0 200px;
+  background-image: url("../images/performance/performance-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.performance__inner {
+  max-width: 976px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.performance__title {
+  max-width: 500px;
+  width: 100%;
+}
+
+.performance__text {
+  max-width: 760px;
+  width: 100%;
+  margin-bottom: 110px;
+}
+
+.performance__item {
+  width: 270px;
+  padding: 16px 0 16px 95px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.performance__item-text {
+  font-size: 17px;
+  color: #fff;
+  line-height: 22px;
+  margin-bottom: 2px;
+}
+
+.performance__item-subtext {
+  font-size: 10.5px;
+  color: rgba(255,255,255,.6);
+  line-height: 14px;
+}
+
+.performance__item::before {
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 75px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon1::before {
+  background-image: url("../images/performance/performance-icon1.png");
+}
+
+.icon2::before {
+  background-image: url("../images/performance/performance-icon2.png");
+}
+
+/* Cooling */
+.cooling {
+  padding: 120px 0 400px;
+  background-image: url("../images/cooling/cooling-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cooling__inner {
+  max-width: 976px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cooling__title {
+  max-width: 800px;
+  width: 100%;
+}
+
+.cooling__text {
+  margin-bottom: 50px;
+}
+
+.cooling__items {
+  display: flex;
+}
+
+.cooling__item {
+  padding: 16px;
+  border: 1px solid #9a9898;
+  border-radius: 10px;
+}
+
+.cooling__item-title {
+  color: #ff2a2a;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 2px;
+}
+
+.cooling__item-text {
+  font-size: 10px;
+  color: rgba(255,255,255,.6);
+  line-height: 14px;
+}
+
+.efficiency {
+  width: 257px;
+  margin-right: 16px;
+  height: 97px;
+}
+
+.temperature {
+  width: 176px;
+  height: 111px;
+}
+
+/* Battery */
+.battery {
+  padding: 120px 0 565px;
+  background-image: url("../images/battery/battery-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.battery__inner {
+  max-width: 976px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.battery__title {
+  max-width: 750px;
+  width: 100%;
+}
+
+/* Camera banner */
+.camera-banner {
+  background-image: url("../images/banner/camera-banner-bg.jpg");
+}
+
+/* Camera img */
+.camera-picture {
+  background-color: #000;
+}
+
+.camera-picture img {
+  max-width: 864px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
