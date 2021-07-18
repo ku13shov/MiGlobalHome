@@ -1313,6 +1313,27 @@ li {
   .banner {
     height: 250px;
   }
+  .snapdragon {
+    padding: 80px 0 300px;
+  }
+  .performance {
+    padding: 80px 0 150px;
+  }
+  .performance__text {
+    margin-bottom: 70px;
+  }
+  .performance__item {
+    margin-bottom: 10px;
+  }
+  .cooling {
+    padding: 80px 0 200px;
+  }
+  .cooling__items {
+    display: block;
+  }
+  .efficiency {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -1339,6 +1360,49 @@ li {
     font-size: 24px;
     line-height: 36px;
   }
+  .snapdragon {
+    padding: 60px 0 200px;
+  }
+  .title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .performance {
+    padding: 60px 0 100px;
+  }
+  .performance__text {
+    margin-bottom: 50px;
+  }
+  .performance__item-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .cooling {
+    padding: 60px 0 100px;
+  }
+  .cooling__text {
+    margin-bottom: 30px;
+  }
+  .cooling__item {
+    padding: 10px;
+  }
+  .cooling__item-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .efficiency {
+    margin-bottom: 15px;
+    width: 223px;
+    height: auto;
+  }
+  .temperature {
+    width: 176px;
+    height: auto;
+  }
 }
 
 @media (max-width: 520px) {
@@ -1351,6 +1415,9 @@ li {
 }
 
 @media (max-width: 440px) {
+  br {
+    display: none;
+  }
   .container {
     padding: 0 8px;
   }
@@ -1361,6 +1428,58 @@ li {
     max-width: 360px;
     font-size: 20px;
     line-height: 30px;
+  }
+  .snapdragon {
+    padding: 30px 0 120px;
+  }
+  .title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .performance {
+    padding: 30px 0 100px;
+  }
+  .performance__text {
+    margin-bottom: 30px;
+  }
+  .performance__item {
+    margin-bottom: 0px;
+    padding: 16px 0 16px 70px;
+  }
+  .performance__item::before {
+    width: 60px;
+    height: 60px;
+  }
+  .performance__item-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .cooling {
+    padding: 30px 0 70px;
+  }
+  .cooling__text {
+    margin-bottom: 20px;
+  }
+  .cooling__item {
+    padding: 8px;
+  }
+  .efficiency {
+    margin-bottom: 10px;
+    width: 202px;
+  }
+  .cooling__item-title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .cooling__item-text {
+    line-height: 12px;
+  }
+  .temperature {
+    width: 165px;
   }
 }
 
