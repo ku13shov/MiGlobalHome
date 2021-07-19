@@ -1286,6 +1286,9 @@ li {
   .night-photography {
     padding: 120px 0 550px;
   }
+  .display {
+    padding: 120px 0 610px;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -1298,6 +1301,23 @@ li {
   .portrait-mode__video {
     max-width: 960px;
     width: 100%;
+  }
+  .display__items {
+    flex-wrap: wrap;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .display__item {
+    width: 220px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .display__item-title {
+    line-height: 24px;
+  }
+  .display__text {
+    margin-bottom: 30px;
   }
 }
 
@@ -1333,6 +1353,9 @@ li {
 }
 
 @media (max-width: 770px) {
+  br {
+    display: none;
+  }
   .overview__info {
     max-width: 250px;
   }
@@ -1405,6 +1428,31 @@ li {
   .selfie-camera__img {
     margin-bottom: 50px;
   }
+  .slow-mo {
+    padding: 80px 0 80px;
+  }
+  .capture-life {
+    padding: 80px 0 70px;
+  }
+  .capture-life__text {
+    margin-bottom: 20px;
+  }
+  .popup-camera {
+    padding: 80px 0 70px;
+  }
+  .display {
+    padding: 80px 0 505px;
+  }
+  .display__item {
+    width: 240px;
+    padding: 7px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .display__item-title {
+    line-height: 22px;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -1423,9 +1471,6 @@ li {
 }
 
 @media (max-width: 600px) {
-  br {
-    display: none;
-  }
   .overview__info {
     max-width: 182px;
   }
@@ -1526,6 +1571,51 @@ li {
   .selfie-camera__item-title {
     font-size: 14px;
   }
+  .slow-mo {
+    padding: 60px 0 60px;
+  }
+  .slow-mo__text {
+    margin-bottom: 20px;
+  }
+  .capture-life {
+    padding: 60px 0 40px;
+  }
+  .capture-life__text {
+    margin-bottom: 0px;
+  }
+  .popup-camera {
+    padding: 60px 0 50px;
+  }
+  .popup-camera__text {
+    margin-bottom: 30px;
+  }
+  .popup-camera__item {
+    margin-bottom: 20px;
+    width: 239px;
+    padding: 10px;
+  }
+  .popup-camera__item-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .display {
+    padding: 60px 0 450px;
+  }
+  .display__text {
+    margin-bottom: 20px;
+  }
+  .display__item {
+    width: 200px;
+    padding: 5px;
+  }
+  .display__item-title {
+    line-height: 18px;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .display__item-text {
+    line-height: 12px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -1534,6 +1624,15 @@ li {
   }
   .feature__item {
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 470px) {
+  .display {
+    padding: 30px 0 30px;
+  }
+  .display__items {
+    max-width: 200px;
   }
 }
 
@@ -1648,6 +1747,30 @@ li {
   }
   .selfie-camera__item-title {
     font-size: 12px;
+  }
+  .slow-mo {
+    padding: 30px 0 30px;
+  }
+  .slow-mo__text {
+    margin-bottom: 10px;
+  }
+  .capture-life {
+    padding: 30px 0 20px;
+  }
+  .popup-camera {
+    padding: 30px 0 20px;
+  }
+  .popup-camera__text {
+    margin-bottom: 15px;
+  }
+  .popup-camera__item-title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .popup-camera__item {
+    margin-bottom: 10px;
+    width: 205px;
+    padding: 7px;
   }
 }
 
