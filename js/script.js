@@ -3,12 +3,10 @@ const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slider__img');
 const slidesInner = document.querySelector('.slider__inner');
 const slidesField = document.querySelector('.slider__wrapper');
-const width = window.getComputedStyle(slidesInner).width;
+let width = window.getComputedStyle(slidesInner).width;;
 const dotsInner = document.createElement('ol');
 let slideIndex = 1;
 let offset = 0;
-
-slidesField.style.width = 100 * slides.length + '%';
 
 function changeSlide() {
   if (offset >= +width.slice(0, width.length - 2) * (slides.length - 1)) {
@@ -43,11 +41,29 @@ function changeBgDots() {
   dots[slideIndex - 1].style.backgroundColor = '#fff';
 }
 
+slides.forEach(slide => {
+  slide.style.width = width;
+  slide.style.height = 'auto';
+});
+slidesField.style.width = 100 * slides.length + '%';
+
 addDots();
 
 const dots = document.querySelectorAll('.dot');
 
 dots[slideIndex - 1].style.backgroundColor = '#fff';
+
+window.addEventListener('resize', () => {
+  width = window.getComputedStyle(slidesInner).width;
+  slides.forEach(slide => {
+    slide.style.width = width;
+    slide.style.height = 'auto';
+  });
+  slidesField.style.width = 100 * slides.length + '%';
+  offset = 0;
+  slideIndex = 1;
+  changeSlide();
+});
 
 dots.forEach(dot => {
   dot.addEventListener('click', (e) => {
